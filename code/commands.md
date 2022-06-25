@@ -4,7 +4,7 @@ docker-compose up -d
 docker-compose exec app python manage.py migrate
 docker-compose exec app python manage.py shell
 ```
-Далее ввести в комндную строку:
+Далее ввести в командную строку:
 ```
 from django_celery_beat.models import CrontabSchedule, PeriodicTask
 from test_task.tasks import update_data
