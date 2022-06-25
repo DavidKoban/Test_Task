@@ -10,7 +10,7 @@
 
 https://docs.google.com/spreadsheets/d/10J-A-B-RAYCQgm4ZOqUnOGVo-PBY29vZrOUI1DvULL0/edit?pli=1#gid=0
 
-Коментарии в коде на русском языке для удобства
+Коментарии в коде на русском языке для удобства проверяющего
 
 # Инструкция запуска
 
