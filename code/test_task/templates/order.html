@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Заказы</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Заказы</h1>
+    <table border="1" cellspacing="0" width="1000">
+        <tr>
+            <td>
+                №
+            </td>
+            <td>
+                Заказ №
+            </td>
+            <td>
+                Cтоимость, &#36;
+            </td>
+            <td>
+                Cтоимость, &#8381;
+            </td>
+            <td>
+                Срок поставки
+            </td>
+        </tr>
+        {% for order in orders %}
+        <tr>
+            <td>
+                {{ order.id }}
+            </td>
+            <td>
+                {{ order.order_number }}
+            </td>
+            <td>
+                {{ order.cost_usd }}
+            </td>
+            <td>
+                {{ order.cost_rub }}
+            </td>
+            <td>
+                {{ order.delivery_time | date:'d.m.Y' }}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
