@@ -4,7 +4,7 @@ docker-compose up -d
 docker-compose exec app python manage.py migrate
 docker-compose exec app python manage.py shell
 ```
-Далее ввести в командную строку:
+Далее ввести:
 ```
 from django_celery_beat.models import CrontabSchedule, PeriodicTask
 from test_task.tasks import update_data
@@ -18,7 +18,7 @@ PeriodicTask.objects.create(
     task='test_task.tasks.update_data',
 )
 ```
-После чего перезагрузите докер-контейнеры
+После чего для выхода нажмите Crtl+Z(или Crtl+D) и перезагрузите докер-контейнеры
 ```
 docker-compose restart
 ```
