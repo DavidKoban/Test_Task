@@ -1,5 +1,5 @@
-docker-compose down
-docker-compose up
+```
+docker-compose up -d
 docker-compose exec app python manage.py migrate
 docker-compose exec app python manage.py shell
 >>> from django_celery_beat.models import CrontabSchedule, PeriodicTask
@@ -14,4 +14,5 @@ docker-compose exec app python manage.py shell
     task='test_task.tasks.update_data',
 )
 docker-compose down
-docker-compose up
+docker-compose up -d
+```
