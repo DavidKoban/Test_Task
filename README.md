@@ -17,14 +17,14 @@ https://docs.google.com/spreadsheets/d/10J-A-B-RAYCQgm4ZOqUnOGVo-PBY29vZrOUI1DvU
 Установите docker(я использовал docker-desktop)
 
 В командную строку вставьте команду
-
+```
 git clone https://github.com/DavidKoban/Test_Task/
-
+```
 Далее перейдите в рабочую дерикторию используя команды
-
+```
 cd Test_Task
 
 cd code
-
+```
 После чего перейдите в файл commands.txt и проследуйте инструкции строго соблюдая последовательность введения команд
 
